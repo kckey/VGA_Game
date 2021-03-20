@@ -124,8 +124,7 @@ begin
  blank2 => digit2_blank, --connected to digit2_blank signal
  blank1 => digit1_blank, --connected to digit1_blank signal
  blank0 => digit0_blank, --connected to digit0_blank signal
- sevenSegs => seg, --sevenSegs is connected to seg
-(output)
+ sevenSegs => seg, --sevenSegs is connected to seg(output)
  anodes => an --anodes is connected to an (output)
  );
 
@@ -764,4 +763,4 @@ digit3_blank <= DISABLE_DIGIT;
  P2_Victory_Init <= PASSIVE when (P2_decode < 99) else
  ACTIVE when (P2_decode > 99);
 
- end Whack_A_Lit_ARCH; 
+ end Two_Player_Race_ARCH; 
