@@ -758,9 +758,7 @@ digit3_blank <= DISABLE_DIGIT;
  Button <= btnC;
  switch <= sw;
  led <= HitLit;
- P1_Victory_Init <= PASSIVE when (P1_decode < 99) else
- ACTIVE when (P1_decode > 99);
- P2_Victory_Init <= PASSIVE when (P2_decode < 99) else
- ACTIVE when (P2_decode > 99);
+ P1_Victory_Init <= PASSIVE when (P1_decode < 99) else ACTIVE;
+ P2_Victory_Init <= PASSIVE when (P2_decode < 99) else ACTIVE;
 
  end Two_Player_Race_ARCH; 
